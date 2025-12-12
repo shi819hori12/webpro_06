@@ -5,8 +5,8 @@
 
 - [ ] 開発者向けドキュメントの作業
   - [x] 対象とするシステムの決定 :thinking:
-  - [ ] データ構造の決定 :thinking:
-  - [ ] ページ構造の検討 :thinking:
+  - [x] データ構造の決定 :thinking:
+  - [x] ページ構造の検討 :thinking:
   - [ ] ページ遷移の検討 :thinking:
   - [ ] HTTPメソッドとリソース名の決定
   - [ ] ページ遷移図の作成 :writing_hand:
