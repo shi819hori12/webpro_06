@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>ID</td><td><%= data.code %></td></tr>
+    <tr><td>アイドル名</td><td><%= data.name %></td></tr>
+    <tr><td>メンバー</td><td><%= data.change %></td></tr>
+    <tr><td>ファンネーム</td><td><%= data.distance %></td></tr>
+  </table>
+  <a href="/k-pop/edit/<%= id %>">編集</a>
+  <a href="/k-pop">k-popアイドル一覧に戻る</a>
+</body>
+</html>

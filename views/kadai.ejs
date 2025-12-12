@@ -1,0 +1,20 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>k-popアイドル</title>
+</head>
+<body>
+  <h2>k-popアイドルの詳細</h2>
+  <table>
+    <tr><th>ID</th><th>アイドル名</th></tr>
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr><td><%= row.id %></td>
+        <td><a href="/k-pop/<%= number %>"><%= row.name %></a></td></tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <a href="/k-pop/create">追加</a>
+</body>
+</html>
