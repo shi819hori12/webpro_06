@@ -12,8 +12,12 @@
     <tr><td>アイドル名</td><td><%= data.name %></td></tr>
     <tr><td>メンバー</td><td><%= data.member %></td></tr>
     <tr><td>ファンネーム</td><td><%= data.fanname %></td></tr>
+    <tr><td>事務所</td><td><%= data.office %></td></tr>
+    <tr><td>デビュー日</td><td><%= data.debut_date %></td></tr>
+    <tr><td>デビュー曲</td><td><%= data.debut_song %></td></tr>
   </table>
   <a href="/k-pop/edit/<%= id %>">編集</a>
+  <a href="/k-pop/delete/<%= id %>">削除</a>
   <a href="/k-pop">k-popアイドル一覧に戻る</a>
 </body>
 </html>

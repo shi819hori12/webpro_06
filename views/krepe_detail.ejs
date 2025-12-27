@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>ID</td><td><%= data.id %></td></tr>
+    <tr><td>メニュー</td><td><%= data.name %></td></tr>
+    <tr><td>材料</td><td><%= data.material %></td></tr>
+    <tr><td>アレルギー</td><td><%= data.allergy %></td></tr>
+    <tr><td>キロカロリー</td><td><%= data.energy %></td></tr>
+  </table>
+  <a href="/krepe/edit/<%= id %>">編集</a>
+   <a href="/krepe/delete/<%= id %>">削除</a>
+  <a href="/krepe">メニュー一覧に戻る</a>
+</body>
+</html>

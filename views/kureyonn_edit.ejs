@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の編集</h2>
+  <form action="/kureyonn/update/<%= data.id - 1 %>" method="POST">
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><td>ID</td><td><input type="text" name="id" value="<%= data.id %>"></td></tr>
+      <tr><td>名前</td><td><input type="text" name="name" value="<%= data.name %>"></td></tr>
+      <tr><td>年齢</td><td><input type="text" name="age" value="<%= data.age %>"></td></tr>
+      <tr><td>特技</td><td><input type="text" name="skill" value="<%= data.skill %>"></td></tr>
+      <tr><td>好きな物</td><td><input type="text" name="like" value="<%= data.like %>"></td></tr>
+       <tr><td>所属</td><td><input type="text" name="join" value="<%= data.join %>"></td></tr>
+    </table>
+    <input type="submit" values="登録">
+  </form>
+  <a href="/kureyonn/">登場人物一覧に戻る</a>
+</body>
+</html>
